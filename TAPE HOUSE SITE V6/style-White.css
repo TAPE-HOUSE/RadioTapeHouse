@@ -1,0 +1,1030 @@
+/* FONT-FACE */
+
+@font-face {
+    font-family: maxine;
+    src: url(/fonts/Maxine\ Sans.otf);
+}
+
+@font-face {
+    font-family: maxinelight;
+    src: url(Maxine\ Sans\ Light\ Italic.otf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+/* ----------- BODY ----------- */
+
+body
+{
+    background-color: #fbeaea;
+    /*background-image:url(capecran.png);*/
+    /*background-image: url(src="https:\/\/manager5.streamradio.fr:1280\/media\/tracks\/trackImage279_large.jpg");*/
+    font-family: maxine;
+}
+
+
+
+
+
+
+/* ----------- PAGE ----------- */
+
+.containerpage
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+/* ----------- PAGE COLUMN ----------- */
+
+.containercolumn
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+   justify-content: space-between;
+}
+
+
+
+
+
+
+/* ----------- GAUCHE ----------- */
+
+.gauche
+{
+    height: 100%;
+    width: 30%;
+}
+
+.containertxt, .containertxt1
+{
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    
+    height: 100%;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    writing-mode: vertical-lr;
+
+    margin-left: 0px;
+}
+
+.containertxt1
+{
+    display: flex;
+    margin-left: 170px;
+}
+
+.txt
+{
+    text-indent: 70px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    animation: scrollTxt 35s linear infinite;
+    -webkit-animation: scrollTxt 35s linear infinite;
+}
+
+.txt1
+{
+    text-indent: 70px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    animation: scrollTxt 25s linear infinite;
+    -webkit-animation: scrollTxt 25s linear infinite;
+}
+
+@keyframes scrollTxt {
+    0%{
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+
+    100%{
+        transform: translate(0, -200%);
+        -webkit-transform: translate(0, -200%);
+    } 
+    
+}
+
+.music-data
+{
+    color: black;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.music-data.isOpen
+{
+    color: white;
+}
+
+.artist
+{
+    font-size: 170px;
+    color: black;
+}
+
+.now
+{
+    background-color: #fbeaea;
+    color: #808080;
+    font-size: 70px;
+    z-index: 3500000000;
+}
+
+.title
+{
+    flex-wrap: nowrap;
+    font-size: 70px;
+    color: black;
+}
+
+.txt1
+{
+    z-index: -1000;
+}
+
+ #artist2, #artist4, #titre2, #titre4, #artist6, #artiste8, #titre6, #titre8
+{
+    font-family: maxinelight;
+}
+
+
+
+
+
+
+/* ----------- HAUT ----------- */
+
+
+.haut
+{
+    display: flex;
+    position: absolute;
+    width: 70%;
+    height: 10%;
+}
+
+.fenfr
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55.65%;
+}
+
+ .enfr
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 50px;
+    border: 2px solid #0c0c0e;
+} 
+
+.en
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 20px 0px 0px 20px;
+    width: 25px;
+    background-color: #0c0c0e; 
+    color: white;
+}
+
+.fr
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    font-size: 13px;
+    width: 25px;
+    color: #0c0c0e;
+}
+
+.menu-btn
+{
+    display: flex;
+    flex-direction: row-reverse;
+    animation: bouncer 0.70s ease infinite alternate;
+}
+
+@keyframes bouncer {
+    from {transform: translateX(-20px);}
+    to   {transform: translateX(0px);}
+}
+
+
+
+
+
+
+/* ----------- CENTRE ----------- */
+
+.center
+{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 0;
+    width: 70%;
+    height: 70%;
+    top: 10%;
+}
+
+
+
+.pochette
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    /* transform: rotate(-3deg); */
+}
+
+.img
+{
+    width: 56.6%;
+    height: 100%;
+}
+
+.invicontainright
+{
+    width: 45%;
+    height: 100%;
+    
+}
+
+
+
+
+
+
+/* ----------- BAS ----------- */
+
+.bas
+{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 70%;
+    height: 20%;
+    top: 80%;
+}
+
+.bouton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55.7%;
+}
+
+.icones
+{
+    display: flex;
+    align-items: center;
+    display: block;
+    width: 44,3%;
+}
+
+.iconsoc
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fb, .insta, .spotify, .apple, .playstore
+{
+    padding: 0 18px;
+}
+
+.play-pause-btn
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    cursor: pointer;
+    margin-bottom: auto;
+    margin-top: auto;
+    filter: invert(100%) sepia(0) saturate(100%) hue-rotate(0) brightness(-100%) contrast(1000%);
+}
+
+#btnPlay{
+    
+    animation: bounce 0.70s ease infinite alternate;
+}
+
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+
+.basdroite
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44.3%;
+    justify-content: space-evenly;
+}
+
+.colorbtn
+{
+    display: flex;
+    align-items: right !important;
+}
+
+.colorwhite, .colorblack, .colorred, .colorimg
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.colorbtn button
+{
+    border: none;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.colorwhite
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.colorblack
+{
+    background-color: black;
+    margin-right: 20px;
+}
+
+.colorred
+{
+    background-color: red;
+    margin-right: 20px;
+}
+
+.colorimg
+{
+    background-color: green;
+}
+
+
+.colorbtn button[data-color="white"]{background: /*#FBFBFD*/#fbeaea; border: 3px solid #0c0c0e;}
+.colorbtn button[data-color="black"]{background: #0C0C0E;}
+.colorbtn button[data-color="red"]{background: #511F43;}
+.colorbtn button[data-color="green"]{background: #006837;}
+
+
+
+
+
+/* ---------- CHANGEMENT DE THEMES ----------- */
+
+
+/* TRANSITION */
+
+body, .now, .artist, .title, .colorwhite, .colorblack, .colorred, .colorimg, .play-pause-btn, .menu-btn, .iconsoc, .enfr, .en, .fr, .imagesoc, .magiesoc, .menu1, .menu1a, .traitmenu{
+    -webkit-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+}
+
+
+/* BODY COLOR */
+
+.white body{background: #fbeaea;}
+.black body{background: #0c0c0e;}
+.red body{background: #511F43;}
+.green body{background: #006837;}
+
+
+/* FONTS COLOR */
+
+    /* NOW */
+    .white .now{background: #FBeaea;}
+    .black .now{background: #0c0c0e;}
+    .red .now{background: #511F43;}
+    .green .now{background: #006837;}
+   /* FONTS */
+    .white .artist{color: #0c0c0e;}
+    .black .artist{color: white;}
+    .red .artist{color: white;}
+    .green .artist{color: white;}
+
+    .white .title{color: #0C0C0E;}
+    .black .title{color: white;}
+    .red .title{color: white;}
+    .green .title{color: white;}
+
+
+/* BORDER BUTTONS */
+
+.white .colorwhite{border: 3px solid #0c0c0e;}
+.black .colorblack{border: 3px solid white;}
+.red .colorred{border: 3px solid white;}
+.green .colorimg{border: 3px solid white;}
+
+.black .colorwhite{border: 3px solid #fbeaea;}
+.red .colorwhite{border: 3px solid #fbeaea;}
+.green .colorwhite{border: 3px solid #fbeaea;}
+
+
+/* BOUTON PLAY-PAUSE */
+
+.white .play-pause-btn{filter: invert(100%) sepia(0) saturate(100%) hue-rotate(0) brightness(-100%) contrast(1000%);}
+.black .play-pause-btn{filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(103%) contrast(105%);}
+.red .play-pause-btn{filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(103%) contrast(105%);}
+.green .play-pause-btn{filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(103%) contrast(105%);}
+
+
+/* FLÊCHE MENU */
+
+.white .menu-btn{color: #0C0C0E;}
+.black .menu-btn{filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(103%) contrast(105%);}
+.red .menu-btn{filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(103%) contrast(105%);}
+.green .menu-btn{filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(11deg) brightness(103%) contrast(105%);}
+
+
+/* MENU */
+
+.white .menu1{background-color: #0c0c0e;}
+.black .menu1{background-color: white;}
+.red .menu1{background-color: white;}
+.green .menu1{background-color: white;}
+
+.white .menu1a{color: white !important;}
+.black .menu1a{color: #0C0C0E !important;}
+.red .menu1 .menu1a{color: #0C0C0E !important;}
+.green .menu1 .menu1a{color: #0C0C0E !important;}
+
+.white .traitmenu{background-color: white !important;}
+.black .traitmenu{background-color: #0C0C0E !important;}
+.red .menu1 .traitmenu{background-color: #0C0C0E !important;}
+.green .menu1 .traitmenu{background-color: #0C0C0E !important;}
+
+
+/* ICON RESEAUX SOCIAUX HOME PAGE */
+
+/* MENU */
+.white .imagesoc{color: white;}
+.black .imagesoc{color: #0C0C0E;}
+.red .imagesoc{color: #0C0C0E;}
+.green .imagesoc{color: #0C0C0E;}
+
+/* PRINCIPALE */
+.white .magiesoc{color: #0c0c0e;}
+.black .magiesoc{color: white;}
+.red .magiesoc{color: white;}
+.green .magiesoc{color: white;}
+
+
+/* EN-FR */
+
+    .white .enfr{border: 2px solid #0c0c0e;}
+    .black .enfr{border: 2px solid white;}
+    .red .enfr{border: 2px solid white;}
+    .green .enfr{border: 2px solid white;}
+
+  /* EN */
+
+    .white .en{background-color: #0c0c0e; color: white;}
+    .black .en{background-color: white; color: #0c0c0e;}
+    .red .en{background-color: white; color: #0c0c0e;}
+    .green .en{background-color: white; color: #0c0c0e;}
+
+  /* FR */
+
+    .white .fr {color: #0c0c0e;}
+    .black .fr {color: white;}
+    .red .fr {color: white;}
+    .green .fr {color: white;}
+
+
+.icones
+{
+  bottom: 0px;
+
+}
+
+.iconsoc1
+{
+    list-style: none;
+}
+
+
+
+
+
+
+/* ----------- MENU MOBILE ----------- */ 
+
+.menu1
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #0C0C0E;
+    width: 70%;
+    height: 100%;
+
+    transition: transform .6s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    transform: translateX(103%);
+    -webkit-transform: translateX(103%);  
+
+
+}
+
+.menu1.isOpen
+{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    /* color: white; */
+}
+
+.menu1 .menu1ul
+{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 35px;
+
+}
+
+.menu1 .menu1ul .menu1li
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+
+}
+
+.menu .menu1ul .menu1li .menu1a
+{
+    /* color: white; */
+    text-transform: uppercase;
+}
+
+.menu1 .menu1a
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    /*font-size: 80px;*/
+    /*letter-spacing: .070em;*/
+    text-align: end;
+}
+
+.about
+{
+    font-size: 1em !important;
+}
+
+
+
+
+
+
+/* CHANGER THEME MENU */
+
+.colorbtnmenu
+{
+    display: flex;
+    height: 90%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.colorbtnmenu button
+{
+    border: none;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.colorbtnmenu button[data-color="white"]{background: /*#FBFBFD*/#fbeaea; border: 3px solid #0c0c0e;}
+.colorbtnmenu button[data-color="black"]{background: #0C0C0E;}
+.colorbtnmenu button[data-color="red"]{background: #511F43;}
+.colorbtnmenu button[data-color="green"]{background: #006837;}
+
+
+
+
+
+
+/* TRAIT MENU */
+
+.containtrait
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 10%;
+}
+
+.traitmenu
+{
+    position: absolute;
+    width: 90%;
+    height: 2.5px;
+    background-color: white;
+    bottom: 10%;
+    text-align: center;
+}
+
+
+
+/* ICONES RESEAUX SOCIAUX */
+
+
+.iconsoc2
+{
+    text-align: center;
+    width: 50%;
+}
+
+li
+{
+    display: inline-block;
+}
+
+.iconsoc2 i
+{
+    width: 20px;
+    padding: 0 15px 20px 15px;
+    color: white;
+}
+
+.iconsoc2
+{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    
+}
+
+.iconsoc3
+{
+    list-style: none;
+}
+
+.iconsoc2 .iconsoc3
+{
+    display: inline-block;
+}
+
+
+
+
+
+
+/* ----------- MENU BUTTON ----------- */
+
+.menu-btn
+{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    z-index: 20;
+    
+}
+
+.menu-btn_burger
+{
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    float: top;
+    display: block;
+    filter: invert(100%) sepia(0) saturate(100%) hue-rotate(0) brightness(-100%) contrast(1000%);
+}
+
+/* .flecheg
+{
+    position: absolute;
+    top: 20px;
+} */
+/* MENU BUTTON ANIMATION */
+
+.menu-btn.open .menu-btn_burger
+{
+    /*transform: rotateX(180deg);*/
+    /*transform: rotateY(180deg);*/
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+    /*transform: translateX(-200%);*/
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(0%);
+} 
+
+
+
+
+
+
+/* ----------- RESPONSIVE ----------- */
+
+
+/* min 780px */ 
+
+@media (min-width: 780px) {
+
+    .controls1
+    {display: none;}
+    
+}
+
+
+/* max 1037px */
+
+@media (max-width: 1037px) {
+    .iconsoc2 i
+    {
+        width: 15px;
+        padding: 0 10px 20px 15px;
+    }
+    .fb, .insta, .spotify, .apple, .playstore
+    {
+        width: 15px;
+        padding: 0 10px 10px 15px;
+    }
+    .menu1
+    {
+    
+    width: 70%;
+    }
+}
+
+
+/* max 946px */
+
+@media (max-width: 946px) {
+    .iconsoc2 i
+    {
+        width: 13px;
+        padding: 0 10px 20px 15px;
+    }
+
+    .fb, .insta, .spotify, .apple, .playstore
+    {
+        width: 13px;
+        padding: 0 10px 10px 15px;
+    }
+
+    .menu1
+    {
+    
+    width: 70%;
+    }
+}
+
+
+/* min 782px */
+
+@media (min-width: 782px) {
+
+.colorbtnmenu
+{
+    display: none;
+}
+}
+/* max 780px */
+
+@media (max-width: 782px) {
+    .center
+    {
+        display: none;
+    }
+
+    .right
+    {
+        width: 70%;
+    }
+
+    .menu1
+    {
+    
+    width: 65%;
+    }
+
+    .iconsoc2 i
+        {
+    width: 20px;
+    padding: 0 10px 20px 25px;
+    }
+
+    .fb, .insta, .spotify, .apple, .playstore
+        {
+    display: none;
+    }
+    
+    .controls1 
+    {
+        height: 30%;
+    }
+
+    .colorbtn
+    {display: none;}
+    /* {
+        margin-left: 100px;
+        margin-bottom: 30px;
+    } */
+
+    .colorwhite, .colorblack, .colorred, .colorimg
+    {
+        margin-bottom: 20px;
+    }
+
+    .bouton
+    {
+        order: 2;
+    width: 90%;
+    }
+
+}
+
+
+/* max 680px */
+
+@media  (max-width: 680px){
+    .center
+    {
+        display: none;
+    }
+
+    .right
+    {
+        width: 55%;
+    }
+
+    .leftinvi
+    {
+        width: 45%;
+    }
+
+    .menu1
+    {
+    
+    width: 55%;
+    }
+
+    .iconsoc2 i
+    {
+    width: 20px;
+    padding: 0 10px 20px 25px;
+    }
+
+    .fb, .insta, .spotify, .apple, .playstore
+    {
+    width: 20px;
+    padding: 0 10px 20px 25px;
+    }
+
+}
+
+
+/* max 580px */
+
+@media (max-width: 580px) {
+    .iconsoc2 i
+{
+    width: 17px;
+    padding: 0 10px 20px 15px;
+}
+    
+    .fb, .insta, .spotify, .apple, .playstore
+{
+    width: 17px;
+    padding: 0 10px 20px 15px;
+}
+
+}
+
+
+/* max 530px */
+
+@media (max-width: 530px) {
+    .artist{
+        font-size: 120px;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+
+    .now
+    {
+        font-size: 50px;
+    }
+
+    .containertxt1
+    {
+    margin-left: 120px;
+    }
+
+    .iconsoc2 i
+    {
+    width: 15px;
+    padding: 0 10px 20px 13px;
+    }
+
+    .fb, .insta, .spotify, .apple, .playstore
+    {
+    width: 15px;
+    padding: 0 10px 20px 13px;
+    }
+}
+
+
+/* max 470px */
+
+@media (max-width: 470px) {
+    .enfr{
+        display: none;
+    }
+}
+
+
+/* max 425px */
+
+@media (max-width: 425px) {
+    .menu1
+    {
+    
+    width: 66.5%;
+    }
+
+    .resp
+    {
+        display: none;
+    }
+
+}
+
+
+/* max 359px */
+
+@media (max-width: 359px) {
+    .iconsoc2 i
+    {
+    width: 13px;
+    padding: 0 0px 20px 10px;
+    }
+
+    .iconsoc
+    {display: none;}
+}
